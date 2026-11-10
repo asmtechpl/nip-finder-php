@@ -1,0 +1,33 @@
+{
+    "name": "nip-finder/nip-finder",
+    "description": "Framework-agnostic PHP client for a normalized Polish GUS contractor API.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/psr7": "^2.0",
+        "php": "^8.2",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "illuminate/support": "^11.0 || ^12.0 || ^13.0",
+        "phpunit/phpunit": "^11.0 || ^12.0"
+    },
+    "suggest": {
+        "illuminate/support": "Required only for Laravel automatic package discovery."
+    },
+    "autoload": {"psr-4": {"NipFinder\\": "src/"}},
+    "autoload-dev": {"psr-4": {"NipFinder\\Tests\\": "tests/"}},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NipFinder\\Bridge\\Laravel\\NipFinderServiceProvider"
+            ]
+        }
+    },
+    "scripts": {"test": "phpunit", "check": ["composer validate --strict", "@test"]},
+    "config": {"sort-packages": true, "allow-plugins": false},
+    "prefer-stable": true
+}

@@ -1,0 +1,49 @@
+# Dependencies
+/vendor/
+/composer.lock
+
+# Local environment
+/.env
+/.env.*
+!/.env.example
+
+# PHPUnit and coverage
+/.phpunit.cache/
+/.phpunit.result.cache
+/phpunit.xml
+/coverage/
+/build/coverage/
+/.coverage/
+
+# Static analysis and refactoring tools
+/.phpstan.cache/
+/.phpstan.result.cache
+/.psalm/
+/.psalm-cache/
+/.rector.cache/
+/.php-cs-fixer.cache
+/.php-cs-fixer.php
+
+# IDEs and editors
+/.idea/
+/.vscode/
+/.fleet/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*~
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+/.cache/
+/tmp/
